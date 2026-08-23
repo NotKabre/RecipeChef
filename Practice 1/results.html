@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Your Recipes | Cooklit</title>
+
+    <link rel="stylesheet" href="results.css">
+
+</head>
+
+<body>
+
+    <main class="resultsContainer">
+
+        <div class="successIcon">
+            ✓
+        </div>
+
+        <p class="eyebrow">
+            Receipt Scanned
+        </p>
+
+        <h1>
+            Your ingredients are ready.
+        </h1>
+
+        <p class="subtitle">
+            Cooklit found these ingredients from your receipt.
+        </p>
+
+
+        <!-- INGREDIENTS -->
+
+        <section class="ingredientsSection">
+
+            <h2>Ingredients Detected</h2>
+
+            <p id="emptyMessage">
+                Loading ingredients...
+            </p>
+
+            <div
+                class="ingredientList"
+                id="ingredientList"
+            >
+
+            </div>
+
+        </section>
+
+
+        <!-- RECIPES -->
+
+        <section class="recipesSection">
+
+            <h2>Recommended Recipes</h2>
+
+            <article class="recipe">
+
+                <div>
+
+                    <p class="recipeLabel">
+                        Coming Soon
+                    </p>
+
+                    <h3>
+                        AI Recipe Recommendations
+                    </h3>
+
+                    <p>
+                        We're preparing personalized recipes using your scanned ingredients.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </section>
+
+
+        <!-- BUTTON -->
+
+        <button onclick="window.location.href='camera.html'">
+
+            Scan Another Receipt
+
+        </button>
+
+    </main>
+
+
+    <script src="results.js"></script>
+
+</body>
+
+</html>

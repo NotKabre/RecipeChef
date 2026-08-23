@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Scan Receipt | Cooklit</title>
+
+    <link rel="stylesheet" href="camera.css">
+</head>
+
+<body>
+
+    <div class="cameraContainer">
+
+        <h1>Scan Your Receipt</h1>
+
+        <p class="cameraInstructions">
+            Place the receipt inside the frame and make sure the text is clear.
+        </p>
+
+        <div class="cameraBox">
+
+            <video
+                id="camera"
+                autoplay
+                playsinline
+                muted
+            ></video>
+
+            <canvas id="canvas"></canvas>
+
+        </div>
+
+        <div class="buttonRow">
+
+            <button
+                id="captureBtn"
+                type="button"
+            >
+                Capture
+            </button>
+
+            <button
+                id="retakeBtn"
+                type="button"
+            >
+                Retake
+            </button>
+
+            <button
+                id="useBtn"
+                type="button"
+            >
+                Use Receipt
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div id="scanningScreen">
+
+        <div class="receiptPreview">
+
+            <img
+                id="receiptImage"
+                alt="Captured receipt"
+            >
+
+            <div class="scanLine"></div>
+
+        </div>
+
+        <h2>Scanning Receipt...</h2>
+
+        <p>Preparing OCR...</p>
+
+        <div class="loadingDots">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+    </div>
+
+
+    <!-- Tesseract OCR must load before camera.js -->
+    <script src="https://unpkg.com/tesseract.js@5/dist/tesseract.min.js"></script>
+
+    <script src="camera.js"></script>
+
+</body>
+
+</html>
