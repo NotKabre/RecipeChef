@@ -4,8 +4,8 @@ import { createClient } from
 import { SUPABASE_URL, SUPABASE_ANON_KEY } from "./supabase-config.js";
 
 const signinForm = document.getElementById("signinForm");
+const displayNameInput = document.getElementById("displayName");
 const googleButton = document.getElementById("googleButton");
-const createAccount = document.getElementById("createAccount");
 const statusMessage = document.getElementById("statusMessage");
 const signinButton = signinForm.querySelector("button[type='submit']");
 
@@ -29,10 +29,23 @@ const supabase = configIsMissing
 
 // OAuth returns to this page. If Supabase restored a session, continue to the app.
 if (supabase) {
-    const { data: { session } } = await supabase.auth.getSession();
+    try {
+        const { data: { session }, error } = await supabase.auth.getSession();
+        if (error) throw error;
 
-    if (session) {
-        window.location.replace("cooking.html");
+        if (session) {
+            const pendingName = sessionStorage.getItem("cooklit.pendingDisplayName");
+            if (pendingName) {
+                const { error: profileError } = await supabase.auth.updateUser({
+                    data: { display_name: pendingName }
+                });
+                if (profileError) throw profileError;
+                sessionStorage.removeItem("cooklit.pendingDisplayName");
+            }
+            window.location.replace("cooking.html");
+        }
+    } catch (error) {
+        showAuthError(error);
     }
 }
 
@@ -41,96 +54,79 @@ signinForm.addEventListener("submit", async (event) => {
 
     if (!supabase) return;
 
+    const displayName = displayNameInput.value.trim();
+    if (!displayName) {
+        showMessage("Enter the name you want us to call you.", true);
+        displayNameInput.focus();
+        return;
+    }
+
     const email = document.getElementById("email").value.trim();
     const password = document.getElementById("password").value;
 
     setLoading(signinButton, true, "Signing in...");
     showMessage("");
 
-    const { error } = await supabase.auth.signInWithPassword({ email, password });
+    try {
+        const { error } = await supabase.auth.signInWithPassword({ email, password });
+        if (error) throw error;
 
-    if (error) {
+        const { error: profileError } = await supabase.auth.updateUser({
+            data: { display_name: displayName }
+        });
+        if (profileError) throw profileError;
+
+        window.location.assign("cooking.html");
+    } catch (error) {
         showAuthError(error);
         setLoading(signinButton, false);
-        return;
     }
-
-    window.location.assign("cooking.html");
 });
 
 googleButton.addEventListener("click", async () => {
     if (!supabase) return;
 
+    const displayName = displayNameInput.value.trim();
+    if (!displayName) {
+        showMessage("Enter the name you want us to call you.", true);
+        displayNameInput.focus();
+        return;
+    }
     setLoading(googleButton, true, "Opening Google...");
     showMessage("");
 
-    const redirectTo = new URL("signin.html", window.location.href).href;
-    const { error } = await supabase.auth.signInWithOAuth({
-        provider: "google",
-        options: { redirectTo }
-    });
-
-    if (error) {
+    try {
+        sessionStorage.setItem("cooklit.pendingDisplayName", displayName);
+        const redirectTo = new URL("signin.html", window.location.href).href;
+        const { error } = await supabase.auth.signInWithOAuth({
+            provider: "google",
+            options: { redirectTo }
+        });
+        if (error) throw error;
+    } catch (error) {
+        try { sessionStorage.removeItem("cooklit.pendingDisplayName"); } catch { /* Storage may be blocked. */ }
         showAuthError(error);
         setLoading(googleButton, false);
     }
 });
 
-createAccount.addEventListener("click", async (event) => {
-    event.preventDefault();
-
-    if (!supabase) return;
-
-    const email = document.getElementById("email").value.trim();
-    const password = document.getElementById("password").value;
-
-    if (!email || !password) {
-        showMessage(
-            "Enter an email and password first, then click Create one.",
-            true
-        );
-        return;
-    }
-
-    setLinkLoading(true);
-    showMessage("");
-
-    const emailRedirectTo = new URL("signin.html", window.location.href).href;
-    const { data, error } = await supabase.auth.signUp({
-        email,
-        password,
-        options: { emailRedirectTo }
-    });
-
-    if (error) {
-        showAuthError(error);
-        setLinkLoading(false);
-        return;
-    }
-
-    if (data.session) {
-        window.location.assign("cooking.html");
-        return;
-    }
-
-    showMessage("Account created. Check your email to confirm your address.");
-    setLinkLoading(false);
-});
-
 function showAuthError(error) {
-    const message = error.message.toLowerCase();
+    const errorMessage = error?.message || "Unknown authentication error";
+    const message = errorMessage.toLowerCase();
 
-    if (message.includes("invalid login credentials")) {
+    if (error?.name === "SecurityError" || error?.name === "QuotaExceededError") {
+        showMessage("Allow browser storage for this site, then try signing in again.", true);
+    } else if (message.includes("invalid login credentials")) {
         showMessage("The email or password is incorrect.", true);
     } else if (message.includes("already registered")) {
         showMessage("An account with that email already exists.", true);
     } else if (message.includes("password") || message.includes("email")) {
-        showMessage(error.message, true);
+        showMessage(errorMessage, true);
     } else {
         showMessage("Something went wrong. Please try again.", true);
     }
 
-    console.error("Supabase auth error:", error.message);
+    console.error("Supabase auth error:", errorMessage);
 }
 
 function showMessage(message, isError = false) {
@@ -142,16 +138,12 @@ function showMessage(message, isError = false) {
 function setButtonsDisabled(disabled) {
     signinButton.disabled = disabled;
     googleButton.disabled = disabled;
-    createAccount.setAttribute("aria-disabled", String(disabled));
 }
 
 function setLoading(button, isLoading, loadingText = "") {
-    if (!button.dataset.label) button.dataset.label = button.textContent.trim();
+    const label = button.querySelector("[data-button-label]") || button;
+    if (!button.dataset.label) button.dataset.label = label.textContent.trim();
     button.disabled = isLoading;
-    button.textContent = isLoading ? loadingText : button.dataset.label;
-}
-
-function setLinkLoading(isLoading) {
-    createAccount.setAttribute("aria-disabled", String(isLoading));
-    createAccount.textContent = isLoading ? "Creating..." : "Create one";
+    button.setAttribute("aria-busy", String(isLoading));
+    label.textContent = isLoading ? loadingText : button.dataset.label;
 }

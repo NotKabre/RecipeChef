@@ -11,10 +11,13 @@
 
     <title>Scan Receipt | Cooklit</title>
 
-    <link rel="stylesheet" href="camera.css">
+    <link rel="stylesheet" href="camera.css?v=red-black-1">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@800;900;1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="garden-pages.css?v=1">
 </head>
 
-<body>
+<body class="gardenPage cameraGarden">
+    <header class="gardenHeader"><a class="gardenLogo" href="cooking.html" aria-label="Cooklit home"><img src="images/chef-hat.svg" alt="">Cooklit<span aria-hidden="true">✦</span></a><a class="homeLink" href="cooking.html">Back to home <span aria-hidden="true">↗</span></a></header>
 
     <div class="cameraContainer">
 
@@ -94,7 +97,7 @@
     <!-- Tesseract OCR must load before camera.js -->
     <script src="https://unpkg.com/tesseract.js@5/dist/tesseract.min.js"></script>
 
-    <script src="camera.js"></script>
+    <script type="module" src="camera.js?v=walmart-ocr-1"></script>
 
 </body>
 

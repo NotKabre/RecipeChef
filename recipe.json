@@ -1,1 +1,2950 @@
-[]
+[
+  {
+    "id": "tomato-garlic-pasta",
+    "title": "Tomato Garlic Pasta",
+    "category": "Pasta",
+    "minutes": 25,
+    "servings": 2,
+    "description": "A simple pasta with a quick tomato and garlic sauce.",
+    "ingredients": [
+      {
+        "name": "pasta",
+        "quantity": "200 g",
+        "aliases": [
+          "spaghetti",
+          "penne",
+          "fusilli"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "tomato",
+        "quantity": "3 medium",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "garlic",
+        "quantity": "2 cloves",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "olive oil",
+        "quantity": "1 tablespoon",
+        "aliases": [
+          "extra virgin olive oil",
+          "evoo"
+        ],
+        "pantry": true
+      },
+      {
+        "name": "salt",
+        "quantity": "1/4 teaspoon",
+        "aliases": [],
+        "pantry": true
+      }
+    ],
+    "steps": [
+      "Bring a pot of water to a boil. Cook the pasta according to its package directions, reserving 1/2 cup of cooking water before draining.",
+      "Chop the tomatoes and mince the garlic. Heat the oil in a skillet over medium heat and cook the garlic for 30 seconds.",
+      "Add the tomatoes and salt. Simmer for 10 minutes, stirring occasionally.",
+      "Toss in the pasta and enough reserved water to loosen the sauce. Serve hot."
+    ],
+    "cuisine": "Italian",
+    "course": "Main dish",
+    "dietary": [
+      "vegetarian",
+      "vegan",
+      "dairy-free"
+    ],
+    "allergens": [
+      "wheat"
+    ]
+  },
+  {
+    "id": "broccoli-cheddar-pasta",
+    "title": "Broccoli Cheddar Pasta",
+    "category": "Pasta",
+    "minutes": 25,
+    "servings": 2,
+    "description": "Pasta and broccoli in a light cheddar sauce.",
+    "ingredients": [
+      {
+        "name": "pasta",
+        "quantity": "200 g",
+        "aliases": [
+          "penne",
+          "fusilli",
+          "macaroni"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "broccoli",
+        "quantity": "2 cups florets",
+        "aliases": [
+          "brocc",
+          "broc"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "cheddar",
+        "quantity": "100 g, grated",
+        "aliases": [
+          "cheddar cheese"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "milk",
+        "quantity": "1/2 cup",
+        "aliases": [
+          "whole milk",
+          "2% milk",
+          "skim milk"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "butter",
+        "quantity": "1 tablespoon",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "salt",
+        "quantity": "1/4 teaspoon",
+        "aliases": [],
+        "pantry": true
+      }
+    ],
+    "steps": [
+      "Cook the pasta following package directions. Add the broccoli for the final 4 minutes, then drain.",
+      "In the empty pot, warm the butter and milk over low heat.",
+      "Stir in the cheddar a handful at a time until melted. Do not boil.",
+      "Fold in the pasta, broccoli and salt and serve immediately."
+    ],
+    "cuisine": "American",
+    "course": "Main dish",
+    "dietary": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "milk",
+      "wheat"
+    ]
+  },
+  {
+    "id": "spinach-mushroom-omelet",
+    "title": "Spinach Mushroom Omelet",
+    "category": "Breakfast",
+    "minutes": 15,
+    "servings": 2,
+    "description": "Two folded omelets filled with tender vegetables.",
+    "ingredients": [
+      {
+        "name": "egg",
+        "quantity": "4",
+        "aliases": [
+          "free range eggs"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "spinach",
+        "quantity": "2 cups",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "mushroom",
+        "quantity": "1 cup, sliced",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "olive oil",
+        "quantity": "1 tablespoon",
+        "aliases": [
+          "extra virgin olive oil",
+          "evoo"
+        ],
+        "pantry": true
+      },
+      {
+        "name": "salt",
+        "quantity": "1/4 teaspoon",
+        "aliases": [],
+        "pantry": true
+      }
+    ],
+    "steps": [
+      "Beat the eggs with the salt in a bowl.",
+      "Heat half the oil in a nonstick skillet over medium heat. Cook the mushrooms for 5 minutes, then wilt the spinach for 1 minute. Transfer to a plate.",
+      "Add half the remaining oil and half the eggs. Cook gently until set with no runny egg remaining.",
+      "Add half the vegetables, fold the omelet and transfer to a plate. Repeat with the remaining oil, eggs and vegetables."
+    ],
+    "cuisine": "French-inspired",
+    "course": "Main dish",
+    "dietary": [
+      "vegetarian",
+      "dairy-free"
+    ],
+    "allergens": [
+      "egg"
+    ]
+  },
+  {
+    "id": "avocado-egg-toast",
+    "title": "Avocado Egg Toast",
+    "category": "Breakfast",
+    "minutes": 15,
+    "servings": 2,
+    "description": "Crisp toast with mashed avocado and fully cooked eggs.",
+    "ingredients": [
+      {
+        "name": "bread",
+        "quantity": "2 thick slices",
+        "aliases": [
+          "whole wheat bread",
+          "white bread",
+          "sourdough"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "avocado",
+        "quantity": "1",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "egg",
+        "quantity": "2",
+        "aliases": [
+          "free range eggs"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "olive oil",
+        "quantity": "1 tablespoon",
+        "aliases": [
+          "extra virgin olive oil",
+          "evoo"
+        ],
+        "pantry": true
+      },
+      {
+        "name": "salt",
+        "quantity": "1/4 teaspoon",
+        "aliases": [],
+        "pantry": true
+      }
+    ],
+    "steps": [
+      "Toast the bread. Mash the avocado with the salt.",
+      "Heat the oil in a nonstick pan over medium-low heat. Add the eggs and cook until both whites and yolks are firm, flipping if needed.",
+      "Spread the avocado on the toast and top each slice with an egg."
+    ],
+    "cuisine": "Everyday",
+    "course": "Main dish",
+    "dietary": [
+      "vegetarian",
+      "dairy-free"
+    ],
+    "allergens": [
+      "wheat",
+      "egg"
+    ]
+  },
+  {
+    "id": "banana-oat-pancakes",
+    "title": "Banana Oat Pancakes",
+    "category": "Breakfast",
+    "minutes": 20,
+    "servings": 2,
+    "description": "Small banana pancakes made with oats and eggs.",
+    "ingredients": [
+      {
+        "name": "banana",
+        "quantity": "1 large",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "oats",
+        "quantity": "1 cup",
+        "aliases": [
+          "rolled oats",
+          "quick oats"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "egg",
+        "quantity": "2",
+        "aliases": [
+          "free range eggs"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "milk",
+        "quantity": "1/4 cup",
+        "aliases": [
+          "whole milk",
+          "2% milk",
+          "skim milk"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "butter",
+        "quantity": "1 tablespoon",
+        "aliases": [],
+        "pantry": true
+      }
+    ],
+    "steps": [
+      "Blend the oats to a coarse flour. Add the banana, eggs and milk and blend into a batter. Rest for 5 minutes.",
+      "Melt a little butter in a nonstick skillet over medium-low heat.",
+      "Cook small pancakes for 2–3 minutes per side, using the remaining butter as needed, until the centers are set and no wet batter remains."
+    ],
+    "cuisine": "Everyday",
+    "course": "Dessert",
+    "dietary": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "milk",
+      "egg"
+    ]
+  },
+  {
+    "id": "berry-yogurt-bowls",
+    "title": "Berry Yogurt Bowls",
+    "category": "Breakfast",
+    "minutes": 5,
+    "servings": 2,
+    "description": "Creamy yogurt topped with berries and oats.",
+    "ingredients": [
+      {
+        "name": "yogurt",
+        "quantity": "2 cups",
+        "aliases": [
+          "greek yogurt",
+          "plain greek yogurt",
+          "plain yoghurt",
+          "greek yoghurt"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "strawberry",
+        "quantity": "1 cup",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "oats",
+        "quantity": "1/2 cup",
+        "aliases": [
+          "rolled oats",
+          "quick oats"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "honey",
+        "quantity": "2 teaspoons",
+        "aliases": [],
+        "pantry": true
+      }
+    ],
+    "steps": [
+      "Wash, hull and slice the strawberries.",
+      "Divide the yogurt between two bowls.",
+      "Top with the strawberries and oats and drizzle with honey."
+    ],
+    "cuisine": "Everyday",
+    "course": "Dessert",
+    "dietary": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "milk"
+    ]
+  },
+  {
+    "id": "chicken-broccoli-rice",
+    "title": "Chicken and Broccoli Rice",
+    "category": "Dinner",
+    "minutes": 35,
+    "servings": 2,
+    "description": "A skillet chicken and broccoli topping for rice.",
+    "ingredients": [
+      {
+        "name": "chicken breast",
+        "quantity": "300 g",
+        "aliases": [
+          "chicken",
+          "chkn",
+          "chkn brst"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "broccoli",
+        "quantity": "2 cups florets",
+        "aliases": [
+          "brocc",
+          "broc"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "rice",
+        "quantity": "3/4 cup, uncooked",
+        "aliases": [
+          "white rice",
+          "jasmine rice",
+          "basmati rice",
+          "long grain rice",
+          "long grain white rice"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "garlic",
+        "quantity": "2 cloves",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "soy sauce",
+        "quantity": "1 tablespoon",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "olive oil",
+        "quantity": "1 tablespoon",
+        "aliases": [
+          "extra virgin olive oil",
+          "evoo"
+        ],
+        "pantry": true
+      }
+    ],
+    "steps": [
+      "Cook the rice with water according to its package directions.",
+      "On a separate cutting board, cut the chicken into bite-size pieces. Wash hands and clean surfaces after handling raw chicken. Mince the garlic.",
+      "Heat the oil in a skillet over medium-high heat. Add the chicken and cook for 6–8 minutes, turning often.",
+      "Add the broccoli, garlic and 1/4 cup water. Cover and cook for 5 minutes or until the broccoli is tender and the chicken reaches 165°F (74°C) in its thickest pieces.",
+      "Stir in the soy sauce and serve over rice."
+    ],
+    "cuisine": "Chinese-inspired",
+    "course": "Main dish",
+    "dietary": [
+      "dairy-free"
+    ],
+    "allergens": [
+      "wheat",
+      "soy"
+    ]
+  },
+  {
+    "id": "lemon-salmon-potatoes",
+    "title": "Lemon Salmon and Potatoes",
+    "category": "Dinner",
+    "minutes": 40,
+    "servings": 2,
+    "description": "Roasted salmon with crisp-edged potatoes.",
+    "ingredients": [
+      {
+        "name": "salmon",
+        "quantity": "2 fillets, about 150 g each",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "potato",
+        "quantity": "400 g",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "lemon",
+        "quantity": "1",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "olive oil",
+        "quantity": "1 tablespoon",
+        "aliases": [
+          "extra virgin olive oil",
+          "evoo"
+        ],
+        "pantry": true
+      },
+      {
+        "name": "salt",
+        "quantity": "1/4 teaspoon",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "black pepper",
+        "quantity": "1/8 teaspoon",
+        "aliases": [],
+        "pantry": true
+      }
+    ],
+    "steps": [
+      "Heat the oven to 425°F (220°C). Cut the potatoes into small 2 cm pieces.",
+      "Toss the potatoes with half the oil and salt on a baking tray. Roast for 20 minutes.",
+      "Move the potatoes aside and add the salmon. Brush it with the remaining oil and season with the remaining salt, pepper and lemon juice.",
+      "Roast for another 12–15 minutes, until the potatoes are tender and the salmon reaches 145°F (63°C) in its thickest part."
+    ],
+    "cuisine": "Mediterranean",
+    "course": "Main dish",
+    "dietary": [
+      "dairy-free"
+    ],
+    "allergens": [
+      "fish"
+    ]
+  },
+  {
+    "id": "tofu-vegetable-stir-fry",
+    "title": "Tofu Vegetable Stir-Fry",
+    "category": "Dinner",
+    "minutes": 25,
+    "servings": 2,
+    "description": "Golden tofu with broccoli and bell pepper.",
+    "ingredients": [
+      {
+        "name": "tofu",
+        "quantity": "300 g",
+        "aliases": [
+          "firm tofu",
+          "extra firm tofu"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "broccoli",
+        "quantity": "2 cups florets",
+        "aliases": [
+          "brocc",
+          "broc"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "bell pepper",
+        "quantity": "1",
+        "aliases": [
+          "red bell pepper",
+          "green bell pepper",
+          "yellow bell pepper",
+          "capsicum",
+          "red capsicum",
+          "green capsicum"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "garlic",
+        "quantity": "2 cloves",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "soy sauce",
+        "quantity": "2 tablespoons",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "olive oil",
+        "quantity": "1 tablespoon",
+        "aliases": [
+          "extra virgin olive oil",
+          "evoo"
+        ],
+        "pantry": true
+      }
+    ],
+    "steps": [
+      "Drain and pat the tofu dry, then cube it. Slice the bell pepper and mince the garlic.",
+      "Heat the oil in a large skillet over medium-high heat. Cook the tofu for 8–10 minutes, turning to brown several sides. Transfer to a plate.",
+      "Add the broccoli, bell pepper and 3 tablespoons water. Cover and cook for 4 minutes.",
+      "Uncover and add the garlic, tofu and soy sauce. Stir-fry for 2 minutes and serve hot."
+    ],
+    "cuisine": "Chinese-inspired",
+    "course": "Main dish",
+    "dietary": [
+      "vegetarian",
+      "vegan",
+      "dairy-free"
+    ],
+    "allergens": [
+      "wheat",
+      "soy"
+    ]
+  },
+  {
+    "id": "black-bean-quesadillas",
+    "title": "Black Bean Quesadillas",
+    "category": "Lunch",
+    "minutes": 15,
+    "servings": 2,
+    "description": "Crisp tortillas filled with black beans and melted cheese.",
+    "ingredients": [
+      {
+        "name": "tortilla",
+        "quantity": "4 small",
+        "aliases": [
+          "flour tortilla",
+          "corn tortilla"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "black beans",
+        "quantity": "1 can (400 g), drained and rinsed",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "cheddar",
+        "quantity": "100 g, grated",
+        "aliases": [
+          "cheddar cheese"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "tomato",
+        "quantity": "1 medium",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "olive oil",
+        "quantity": "1 tablespoon",
+        "aliases": [
+          "extra virgin olive oil",
+          "evoo"
+        ],
+        "pantry": true
+      }
+    ],
+    "steps": [
+      "Drain and rinse the beans and lightly mash them. Dice the tomato.",
+      "Divide the beans, cheese and tomato over half of each tortilla and fold closed.",
+      "Heat a little oil in a skillet over medium heat. Cook the quesadillas in batches for 2–3 minutes per side until crisp and hot throughout, with melted cheese."
+    ],
+    "cuisine": "Mexican-inspired",
+    "course": "Main dish",
+    "dietary": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "milk",
+      "wheat"
+    ]
+  },
+  {
+    "id": "chickpea-cucumber-salad",
+    "title": "Chickpea Cucumber Salad",
+    "category": "Salad",
+    "minutes": 10,
+    "servings": 2,
+    "description": "A crunchy bean salad with a lemon dressing.",
+    "ingredients": [
+      {
+        "name": "chickpeas",
+        "quantity": "1 can (400 g), drained and rinsed",
+        "aliases": [
+          "garbanzo beans",
+          "garbanzo",
+          "chick peas"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "cucumber",
+        "quantity": "1",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "tomato",
+        "quantity": "2 medium",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "lemon",
+        "quantity": "1",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "olive oil",
+        "quantity": "1 tablespoon",
+        "aliases": [
+          "extra virgin olive oil",
+          "evoo"
+        ],
+        "pantry": true
+      },
+      {
+        "name": "salt",
+        "quantity": "1/4 teaspoon",
+        "aliases": [],
+        "pantry": true
+      }
+    ],
+    "steps": [
+      "Drain and rinse the chickpeas. Wash and dice the cucumber and tomatoes.",
+      "Whisk the lemon juice, olive oil and salt in a bowl.",
+      "Add the chickpeas and vegetables and toss thoroughly. Serve immediately or refrigerate."
+    ],
+    "cuisine": "Mediterranean",
+    "course": "Appetizer",
+    "dietary": [
+      "vegetarian",
+      "vegan",
+      "dairy-free"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "tuna-cucumber-wraps",
+    "title": "Tuna Cucumber Wraps",
+    "category": "Lunch",
+    "minutes": 10,
+    "servings": 2,
+    "description": "Quick tuna wraps with cucumber and yogurt.",
+    "ingredients": [
+      {
+        "name": "canned tuna",
+        "quantity": "1 can (145 g), drained",
+        "aliases": [
+          "tuna"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "tortilla",
+        "quantity": "2 large",
+        "aliases": [
+          "flour tortilla",
+          "whole wheat tortilla"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "cucumber",
+        "quantity": "1/2",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "yogurt",
+        "quantity": "3 tablespoons",
+        "aliases": [
+          "greek yogurt",
+          "plain greek yogurt",
+          "plain yoghurt",
+          "greek yoghurt"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "lemon",
+        "quantity": "1/2",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "black pepper",
+        "quantity": "1/8 teaspoon",
+        "aliases": [],
+        "pantry": true
+      }
+    ],
+    "steps": [
+      "Drain the canned tuna and mix it with the yogurt, lemon juice and black pepper.",
+      "Slice the cucumber into thin strips.",
+      "Divide the tuna mixture and cucumber between the tortillas, fold in the ends and roll tightly."
+    ],
+    "cuisine": "Everyday",
+    "course": "Main dish",
+    "dietary": [],
+    "allergens": [
+      "milk",
+      "wheat",
+      "fish"
+    ]
+  },
+  {
+    "id": "roasted-vegetable-tray",
+    "title": "Roasted Vegetable Tray",
+    "category": "Side",
+    "minutes": 35,
+    "servings": 2,
+    "description": "A colorful tray of potatoes, carrots and zucchini.",
+    "ingredients": [
+      {
+        "name": "potato",
+        "quantity": "300 g",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "carrot",
+        "quantity": "2",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "zucchini",
+        "quantity": "1",
+        "aliases": [
+          "courgette",
+          "zucc",
+          "zucch"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "olive oil",
+        "quantity": "1 tablespoon",
+        "aliases": [
+          "extra virgin olive oil",
+          "evoo"
+        ],
+        "pantry": true
+      },
+      {
+        "name": "salt",
+        "quantity": "1/4 teaspoon",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "black pepper",
+        "quantity": "1/8 teaspoon",
+        "aliases": [],
+        "pantry": true
+      }
+    ],
+    "steps": [
+      "Heat the oven to 425°F (220°C). Cut the potatoes and carrots into small pieces and the zucchini into thick half-moons.",
+      "Toss the potatoes and carrots with the oil, salt and pepper on a baking tray. Roast for 15 minutes.",
+      "Add the zucchini, stir and roast for another 15 minutes, until all vegetables are tender and golden."
+    ],
+    "cuisine": "Everyday",
+    "course": "Appetizer",
+    "dietary": [
+      "vegetarian",
+      "vegan",
+      "dairy-free"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "tomato-lentil-soup",
+    "title": "Tomato Lentil Soup",
+    "category": "Soup",
+    "minutes": 35,
+    "servings": 2,
+    "description": "A hearty red lentil soup with carrots and tomatoes.",
+    "ingredients": [
+      {
+        "name": "red lentils",
+        "quantity": "3/4 cup, dry",
+        "aliases": [
+          "lentils"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "tomato",
+        "quantity": "3 medium",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "carrot",
+        "quantity": "1",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "onion",
+        "quantity": "1 small",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "garlic",
+        "quantity": "2 cloves",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "olive oil",
+        "quantity": "1 tablespoon",
+        "aliases": [
+          "extra virgin olive oil",
+          "evoo"
+        ],
+        "pantry": true
+      },
+      {
+        "name": "salt",
+        "quantity": "1/4 teaspoon",
+        "aliases": [],
+        "pantry": true
+      }
+    ],
+    "steps": [
+      "Rinse the lentils. Finely chop the onion, carrot, tomatoes and garlic.",
+      "Heat the oil in a saucepan over medium heat. Cook the onion and carrot for 5 minutes. Add the garlic and cook for 30 seconds.",
+      "Add the tomatoes, lentils, salt and 3 cups water. Bring to a boil.",
+      "Lower the heat and simmer for 20–25 minutes, stirring occasionally, until the lentils and carrots are tender. Add more water if needed."
+    ],
+    "cuisine": "Mediterranean",
+    "course": "Main dish",
+    "dietary": [
+      "vegetarian",
+      "vegan",
+      "dairy-free"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "apple-yogurt-cups",
+    "title": "Apple Yogurt Cups",
+    "category": "Snack",
+    "minutes": 5,
+    "servings": 2,
+    "description": "Crisp apple and creamy yogurt with a little cinnamon.",
+    "ingredients": [
+      {
+        "name": "apple",
+        "quantity": "1 large",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "yogurt",
+        "quantity": "1 1/2 cups",
+        "aliases": [
+          "greek yogurt",
+          "plain greek yogurt",
+          "plain yoghurt",
+          "greek yoghurt"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "cinnamon",
+        "quantity": "1/4 teaspoon",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "honey",
+        "quantity": "2 teaspoons",
+        "aliases": [],
+        "pantry": true
+      }
+    ],
+    "steps": [
+      "Wash, core and dice the apple.",
+      "Divide the yogurt and apple between two bowls.",
+      "Sprinkle with cinnamon, drizzle with honey and serve."
+    ],
+    "cuisine": "Everyday",
+    "course": "Dessert",
+    "dietary": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "milk"
+    ]
+  },
+  {
+    "id": "garlic-green-beans",
+    "title": "Garlic Green Beans",
+    "category": "Side",
+    "minutes": 15,
+    "servings": 2,
+    "description": "Tender green beans tossed with garlic and lemon.",
+    "ingredients": [
+      {
+        "name": "green beans",
+        "quantity": "300 g",
+        "aliases": [
+          "string beans"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "garlic",
+        "quantity": "2 cloves",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "lemon",
+        "quantity": "1/2",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "olive oil",
+        "quantity": "1 tablespoon",
+        "aliases": [
+          "extra virgin olive oil",
+          "evoo"
+        ],
+        "pantry": true
+      },
+      {
+        "name": "salt",
+        "quantity": "1/4 teaspoon",
+        "aliases": [],
+        "pantry": true
+      }
+    ],
+    "steps": [
+      "Trim and wash the green beans. Mince the garlic.",
+      "Simmer the beans in water for 4–6 minutes until tender, then drain.",
+      "Heat the oil in a skillet over medium heat. Cook the garlic for 30 seconds.",
+      "Add the beans, salt and lemon juice and toss for 1 minute."
+    ],
+    "cuisine": "Everyday",
+    "course": "Appetizer",
+    "dietary": [
+      "vegetarian",
+      "vegan",
+      "dairy-free"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "online-carbonara",
+    "title": "Spaghetti Carbonara",
+    "cuisine": "Italian",
+    "category": "Dinner",
+    "minutes": 20,
+    "servings": 4,
+    "description": "Pasta with an egg-and-cheese sauce and crisp cured pork.",
+    "ingredients": [
+      {
+        "name": "spaghetti",
+        "quantity": "400 g",
+        "aliases": [
+          "pasta"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "guanciale",
+        "quantity": "175 g",
+        "aliases": [
+          "pancetta",
+          "bacon"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "egg",
+        "quantity": "2 whole eggs plus 2 yolks",
+        "aliases": [
+          "free range eggs"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "parmesan",
+        "quantity": "100 g",
+        "aliases": [
+          "parmigiano reggiano",
+          "pecorino romano",
+          "parmesan cheese"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "black pepper",
+        "quantity": "1/4 teaspoon",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "salt",
+        "quantity": "1 tablespoon for pasta water",
+        "aliases": [],
+        "pantry": true
+      }
+    ],
+    "steps": [],
+    "timeNote": "",
+    "source": {
+      "name": "RecipeTin Eats",
+      "author": "Nagi Maehashi",
+      "url": "https://www.recipetineats.com/carbonara/",
+      "rating": 4.95,
+      "ratingCount": 227,
+      "checkedOn": "2026-09-23"
+    },
+    "course": "Main dish",
+    "dietary": [],
+    "allergens": [
+      "milk",
+      "wheat",
+      "egg"
+    ]
+  },
+  {
+    "id": "online-greek-salad",
+    "title": "Greek Salad",
+    "cuisine": "Greek",
+    "category": "Salad",
+    "minutes": 15,
+    "servings": 4,
+    "description": "Tomatoes, cucumber, feta and olives with a vinegar dressing.",
+    "ingredients": [
+      {
+        "name": "tomato",
+        "quantity": "3",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "cucumber",
+        "quantity": "4 small Persian cucumbers",
+        "aliases": [
+          "persian cucumber",
+          "lebanese cucumber"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "red onion",
+        "quantity": "1/2 small",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "bell pepper",
+        "quantity": "1 green",
+        "aliases": [
+          "green bell pepper",
+          "capsicum",
+          "red capsicum",
+          "green capsicum"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "feta",
+        "quantity": "250 g",
+        "aliases": [
+          "feta cheese"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "kalamata olives",
+        "quantity": "125 g",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "oregano",
+        "quantity": "2 teaspoons dried",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "garlic",
+        "quantity": "1 clove",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "salt",
+        "quantity": "1/4 teaspoon",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "black pepper",
+        "quantity": "to taste",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "red wine vinegar",
+        "quantity": "3 tablespoons",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "olive oil",
+        "quantity": "6 tablespoons",
+        "aliases": [
+          "extra virgin olive oil"
+        ],
+        "pantry": true
+      }
+    ],
+    "steps": [],
+    "timeNote": "",
+    "source": {
+      "name": "RecipeTin Eats",
+      "author": "Nagi Maehashi",
+      "url": "https://www.recipetineats.com/greek-salad/",
+      "rating": 4.97,
+      "ratingCount": 32,
+      "checkedOn": "2026-09-23"
+    },
+    "course": "Appetizer",
+    "dietary": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "milk",
+      "sulfites"
+    ]
+  },
+  {
+    "id": "online-chicken-fajitas",
+    "title": "Chicken Fajitas",
+    "cuisine": "Tex-Mex",
+    "category": "Dinner",
+    "minutes": 30,
+    "servings": 4,
+    "description": "Chicken, peppers and onions served with tortillas and avocado.",
+    "ingredients": [
+      {
+        "name": "chicken thigh",
+        "quantity": "700 g",
+        "aliases": [
+          "chicken thighs",
+          "chicken breast",
+          "chicken"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "bell pepper",
+        "quantity": "3",
+        "aliases": [
+          "red bell pepper",
+          "green bell pepper",
+          "yellow bell pepper",
+          "capsicum",
+          "red capsicum",
+          "green capsicum"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "onion",
+        "quantity": "1 large",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "tortilla",
+        "quantity": "8–12 small",
+        "aliases": [
+          "flour tortilla"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "avocado",
+        "quantity": "1 large",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "lime juice",
+        "quantity": "1/4 cup",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "orange juice",
+        "quantity": "1/4 cup",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "garlic",
+        "quantity": "2 cloves",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "olive oil",
+        "quantity": "4 tablespoons",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "cumin",
+        "quantity": "1 teaspoon ground",
+        "aliases": [
+          "ground cumin"
+        ],
+        "pantry": true
+      },
+      {
+        "name": "salt",
+        "quantity": "1 teaspoon",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "black pepper",
+        "quantity": "1/2 teaspoon",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "sour cream",
+        "quantity": "for serving",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "lime",
+        "quantity": "wedges for serving",
+        "aliases": [],
+        "pantry": false
+      }
+    ],
+    "steps": [],
+    "timeNote": "",
+    "source": {
+      "name": "RecipeTin Eats",
+      "author": "Nagi Maehashi",
+      "url": "https://www.recipetineats.com/chicken-fajitas/",
+      "rating": 4.94,
+      "ratingCount": 89,
+      "checkedOn": "2026-09-23"
+    },
+    "course": "Main dish",
+    "dietary": [],
+    "allergens": [
+      "milk",
+      "wheat"
+    ]
+  },
+  {
+    "id": "online-fried-rice",
+    "title": "Egg Fried Rice",
+    "cuisine": "Chinese",
+    "category": "Dinner",
+    "minutes": 15,
+    "servings": 2,
+    "description": "A wok-style rice dish with eggs, vegetables and savory sauces.",
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": "2 cups cooked and chilled",
+        "aliases": [
+          "white rice",
+          "jasmine rice",
+          "long grain rice",
+          "long grain white rice"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "egg",
+        "quantity": "3",
+        "aliases": [
+          "free range eggs"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "mixed vegetables",
+        "quantity": "1–1 1/2 cups",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "onion",
+        "quantity": "1/2",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "garlic",
+        "quantity": "2 cloves",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "green onion",
+        "quantity": "3/4 cup sliced",
+        "aliases": [
+          "scallions",
+          "spring onion",
+          "spring onions",
+          "scallion"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "vegetable oil",
+        "quantity": "2 tablespoons",
+        "aliases": [
+          "canola oil"
+        ],
+        "pantry": true
+      },
+      {
+        "name": "chinese cooking wine",
+        "quantity": "1 tablespoon",
+        "aliases": [
+          "shaoxing wine",
+          "mirin",
+          "sake"
+        ],
+        "pantry": true
+      },
+      {
+        "name": "oyster sauce",
+        "quantity": "1 tablespoon",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "soy sauce",
+        "quantity": "1 tablespoon",
+        "aliases": [
+          "light soy sauce"
+        ],
+        "pantry": true
+      },
+      {
+        "name": "white pepper",
+        "quantity": "1/4 teaspoon",
+        "aliases": [],
+        "pantry": true
+      }
+    ],
+    "steps": [],
+    "timeNote": "Requires cooked, chilled rice; serves 2–3.",
+    "source": {
+      "name": "RecipeTin Eats",
+      "author": "Nagi Maehashi",
+      "url": "https://www.recipetineats.com/egg-fried-rice/",
+      "rating": 4.99,
+      "ratingCount": 299,
+      "checkedOn": "2026-09-23"
+    },
+    "course": "Main dish",
+    "dietary": [
+      "dairy-free"
+    ],
+    "allergens": [
+      "wheat",
+      "egg",
+      "soy",
+      "fish",
+      "shellfish",
+      "sulfites"
+    ]
+  },
+  {
+    "id": "online-teriyaki-chicken",
+    "title": "Teriyaki Chicken",
+    "cuisine": "Japanese-inspired",
+    "category": "Dinner",
+    "minutes": 15,
+    "servings": 4,
+    "description": "Chicken thighs with a soy, mirin and sake marinade.",
+    "ingredients": [
+      {
+        "name": "chicken thigh",
+        "quantity": "4 fillets (about 600 g)",
+        "aliases": [
+          "chicken thighs"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "soy sauce",
+        "quantity": "2 tablespoons",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "mirin",
+        "quantity": "2 tablespoons",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "sake",
+        "quantity": "2 tablespoons",
+        "aliases": [
+          "japanese cooking wine"
+        ],
+        "pantry": true
+      },
+      {
+        "name": "vegetable oil",
+        "quantity": "1 tablespoon",
+        "aliases": [
+          "canola oil"
+        ],
+        "pantry": true
+      }
+    ],
+    "steps": [],
+    "timeNote": "Active time only; allow additional marinating time.",
+    "source": {
+      "name": "RecipeTin Eats",
+      "author": "Nagi Maehashi",
+      "url": "https://www.recipetineats.com/teriyaki-chicken/",
+      "rating": 4.97,
+      "ratingCount": 28,
+      "checkedOn": "2026-09-23"
+    },
+    "course": "Main dish",
+    "dietary": [
+      "dairy-free"
+    ],
+    "allergens": [
+      "wheat",
+      "soy",
+      "sulfites"
+    ]
+  },
+  {
+    "id": "online-cheeseburger",
+    "title": "Cheeseburgers",
+    "cuisine": "American",
+    "category": "Dinner",
+    "minutes": 23,
+    "servings": 4,
+    "description": "Beef burgers with cheese, lettuce, tomato and pickles.",
+    "ingredients": [
+      {
+        "name": "ground beef",
+        "quantity": "600 g",
+        "aliases": [
+          "beef mince",
+          "minced beef"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "burger bun",
+        "quantity": "4",
+        "aliases": [
+          "burger buns",
+          "hamburger buns"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "cheese",
+        "quantity": "4–8 slices",
+        "aliases": [
+          "american cheese",
+          "cheddar"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "lettuce",
+        "quantity": "8 leaves",
+        "aliases": [
+          "romaine lettuce",
+          "iceberg lettuce"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "tomato",
+        "quantity": "2 large",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "red onion",
+        "quantity": "1",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "gherkin",
+        "quantity": "2 large",
+        "aliases": [
+          "gherkins",
+          "pickles"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "canola oil",
+        "quantity": "2–3 tablespoons",
+        "aliases": [
+          "vegetable oil"
+        ],
+        "pantry": true
+      },
+      {
+        "name": "salt",
+        "quantity": "1/2 teaspoon",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "black pepper",
+        "quantity": "1/2 teaspoon",
+        "aliases": [],
+        "pantry": true
+      }
+    ],
+    "steps": [],
+    "timeNote": "Single-patty version; choose sauces on the original page.",
+    "source": {
+      "name": "RecipeTin Eats",
+      "author": "Nagi Maehashi",
+      "url": "https://www.recipetineats.com/cheeseburger-recipe/",
+      "rating": 4.99,
+      "ratingCount": 54,
+      "checkedOn": "2026-09-23"
+    },
+    "course": "Main dish",
+    "dietary": [],
+    "allergens": [
+      "milk",
+      "wheat",
+      "sesame"
+    ]
+  },
+  {
+    "id": "online-tikka-masala",
+    "title": "Chicken Tikka Masala",
+    "cuisine": "British-Indian",
+    "category": "Dinner",
+    "minutes": 60,
+    "servings": 4,
+    "description": "Yogurt-marinated chicken in a spiced tomato and cream sauce.",
+    "ingredients": [
+      {
+        "name": "chicken thigh",
+        "quantity": "600 g",
+        "aliases": [
+          "chicken thighs"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "yogurt",
+        "quantity": "1/2 cup",
+        "aliases": [
+          "greek yogurt",
+          "plain yogurt",
+          "plain yoghurt",
+          "greek yoghurt"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "garlic",
+        "quantity": "12 cloves",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "ginger",
+        "quantity": "3 tablespoons grated",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "garam masala",
+        "quantity": "1 tablespoon plus 1 teaspoon",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "cumin",
+        "quantity": "2 teaspoons",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "ground coriander",
+        "quantity": "3 teaspoons",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "paprika",
+        "quantity": "1 tablespoon plus 1 teaspoon",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "turmeric",
+        "quantity": "2 teaspoons",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "cardamom",
+        "quantity": "1/8 teaspoon ground",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "cayenne pepper",
+        "quantity": "1/8 teaspoon",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "black pepper",
+        "quantity": "a pinch",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "salt",
+        "quantity": "2 teaspoons",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "vegetable oil",
+        "quantity": "5–6 tablespoons",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "lemon juice",
+        "quantity": "2 teaspoons",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "butter",
+        "quantity": "80 g",
+        "aliases": [
+          "ghee"
+        ],
+        "pantry": true
+      },
+      {
+        "name": "onion",
+        "quantity": "1",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "tomato passata",
+        "quantity": "400 ml",
+        "aliases": [
+          "passata",
+          "tomato puree"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "cream",
+        "quantity": "100 ml",
+        "aliases": [
+          "heavy cream"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "sugar",
+        "quantity": "1 teaspoon",
+        "aliases": [],
+        "pantry": true
+      }
+    ],
+    "steps": [],
+    "timeNote": "Plus 3–24 hours of marinating; serves 4–5. Rice is an optional accompaniment.",
+    "source": {
+      "name": "RecipeTin Eats",
+      "author": "Nagi Maehashi",
+      "url": "https://www.recipetineats.com/chicken-tikka-masala/",
+      "rating": 4.97,
+      "ratingCount": 238,
+      "checkedOn": "2026-09-23"
+    },
+    "course": "Main dish",
+    "dietary": [],
+    "allergens": [
+      "milk"
+    ]
+  },
+  {
+    "id": "online-caprese",
+    "title": "Caprese Salad",
+    "cuisine": "Italian",
+    "category": "Lunch",
+    "minutes": 15,
+    "servings": 6,
+    "description": "Fresh mozzarella and small tomatoes with herbs and a tangy dressing.",
+    "ingredients": [
+      {
+        "name": "mozzarella",
+        "quantity": "220 g",
+        "aliases": [
+          "bocconcini",
+          "baby mozzarella",
+          "fresh mozzarella",
+          "mozzarella cheese"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "cherry tomato",
+        "quantity": "500 g",
+        "aliases": [
+          "cherry tomatoes",
+          "grape tomatoes",
+          "grape tomato"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "basil",
+        "quantity": "1/2 cup leaves",
+        "aliases": [
+          "sweet basil"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "balsamic glaze",
+        "quantity": "for drizzling",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "garlic",
+        "quantity": "1 clove",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "dijon mustard",
+        "quantity": "1/2 teaspoon",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "olive oil",
+        "quantity": "2 1/2 tablespoons",
+        "aliases": [
+          "extra virgin olive oil"
+        ],
+        "pantry": true
+      },
+      {
+        "name": "white wine vinegar",
+        "quantity": "1 tablespoon",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "oregano",
+        "quantity": "1/4 teaspoon dried",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "parsley",
+        "quantity": "1/4 teaspoon dried",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "thyme",
+        "quantity": "1/4 teaspoon dried",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "salt",
+        "quantity": "1/2 teaspoon",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "black pepper",
+        "quantity": "to taste",
+        "aliases": [],
+        "pantry": true
+      }
+    ],
+    "steps": [],
+    "source": {
+      "name": "RecipeTin Eats",
+      "author": "Nagi Maehashi",
+      "url": "https://www.recipetineats.com/caprese-salad/",
+      "rating": 5,
+      "ratingCount": 20,
+      "checkedOn": "2026-09-23"
+    },
+    "course": "Appetizer",
+    "dietary": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "milk",
+      "mustard",
+      "sulfites"
+    ]
+  },
+  {
+    "id": "online-french-toast",
+    "title": "French Toast",
+    "cuisine": "French-inspired",
+    "category": "Breakfast",
+    "minutes": 12,
+    "servings": 2,
+    "description": "Pan-fried egg-soaked bread for breakfast. See the source for optional fruit and syrup.",
+    "ingredients": [
+      {
+        "name": "bread",
+        "quantity": "6 slices",
+        "aliases": [
+          "brioche",
+          "white bread",
+          "white sandwich bread"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "egg",
+        "quantity": "2",
+        "aliases": [
+          "free range eggs"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "milk",
+        "quantity": "125 ml",
+        "aliases": [
+          "whole milk"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "butter",
+        "quantity": "30–40 g",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "cinnamon",
+        "quantity": "1/2 teaspoon",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "vanilla extract",
+        "quantity": "1 teaspoon",
+        "aliases": [],
+        "pantry": true
+      }
+    ],
+    "steps": [],
+    "source": {
+      "name": "RecipeTin Eats",
+      "author": "Nagi Maehashi",
+      "url": "https://www.recipetineats.com/french-toast/",
+      "rating": 4.95,
+      "ratingCount": 72,
+      "checkedOn": "2026-09-23"
+    },
+    "course": "Dessert",
+    "dietary": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "milk",
+      "wheat",
+      "egg"
+    ]
+  },
+  {
+    "id": "lemon-hummus",
+    "title": "Lemon Hummus",
+    "cuisine": "Middle Eastern-inspired",
+    "category": "Lunch",
+    "minutes": 10,
+    "servings": 2,
+    "description": "A creamy chickpea dip with tahini and lemon.",
+    "ingredients": [
+      {
+        "name": "chickpeas",
+        "quantity": "1 can (400 g), drained",
+        "aliases": [
+          "garbanzo beans",
+          "garbanzo",
+          "chick peas"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "tahini",
+        "quantity": "2 tablespoons",
+        "aliases": [
+          "sesame paste"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "lemon",
+        "quantity": "1",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "garlic",
+        "quantity": "1 small clove",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "olive oil",
+        "quantity": "1 tablespoon",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "salt",
+        "quantity": "1/4 teaspoon",
+        "aliases": [],
+        "pantry": true
+      }
+    ],
+    "steps": [
+      "Rinse and drain the chickpeas. Peel the garlic and juice the lemon.",
+      "Blend the chickpeas, tahini, garlic, lemon juice, oil and salt.",
+      "Blend in cold water a tablespoon at a time until smooth. Divide between two bowls."
+    ],
+    "course": "Appetizer",
+    "dietary": [
+      "vegetarian",
+      "vegan",
+      "dairy-free"
+    ],
+    "allergens": [
+      "sesame"
+    ]
+  },
+  {
+    "id": "tomato-bruschetta",
+    "title": "Tomato Bruschetta",
+    "cuisine": "Italian-inspired",
+    "category": "Lunch",
+    "minutes": 15,
+    "servings": 2,
+    "description": "Crunchy toast topped with tomatoes and basil.",
+    "ingredients": [
+      {
+        "name": "bread",
+        "quantity": "4 slices",
+        "aliases": [
+          "baguette",
+          "sourdough"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "tomato",
+        "quantity": "2 medium",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "basil",
+        "quantity": "6 leaves",
+        "aliases": [
+          "sweet basil"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "garlic",
+        "quantity": "1 clove",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "olive oil",
+        "quantity": "1 tablespoon",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "salt",
+        "quantity": "1/4 teaspoon",
+        "aliases": [],
+        "pantry": true
+      }
+    ],
+    "steps": [
+      "Dice the tomatoes and finely slice the basil. Toss them with the oil and salt.",
+      "Toast the bread until crisp. Halve the garlic and rub its cut side lightly over the toast.",
+      "Spoon the tomato mixture onto the toast and serve immediately."
+    ],
+    "course": "Appetizer",
+    "dietary": [
+      "vegetarian",
+      "vegan",
+      "dairy-free"
+    ],
+    "allergens": [
+      "wheat"
+    ]
+  },
+  {
+    "id": "sesame-cucumber-noodles",
+    "title": "Sesame Cucumber Noodles",
+    "cuisine": "Chinese-inspired",
+    "category": "Lunch",
+    "minutes": 20,
+    "servings": 2,
+    "description": "Cool noodles with cucumber and a sesame dressing.",
+    "ingredients": [
+      {
+        "name": "noodles",
+        "quantity": "180 g",
+        "aliases": [
+          "egg noodles",
+          "wheat noodles"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "cucumber",
+        "quantity": "1",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "tahini",
+        "quantity": "2 tablespoons",
+        "aliases": [
+          "sesame paste"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "soy sauce",
+        "quantity": "1 tablespoon",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "rice vinegar",
+        "quantity": "1 tablespoon",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "sesame oil",
+        "quantity": "1 teaspoon",
+        "aliases": [],
+        "pantry": true
+      }
+    ],
+    "steps": [
+      "Cook the noodles following their package instructions. Drain and rinse under cold water.",
+      "Whisk the tahini, soy sauce, vinegar and sesame oil with 2 tablespoons water. Thin with more water if needed.",
+      "Cut the cucumber into narrow strips and toss with the noodles and dressing."
+    ],
+    "course": "Main dish",
+    "dietary": [
+      "vegetarian",
+      "dairy-free"
+    ],
+    "allergens": [
+      "wheat",
+      "egg",
+      "soy",
+      "sesame",
+      "sulfites"
+    ]
+  },
+  {
+    "id": "black-bean-rice-bowls",
+    "title": "Black Bean Rice Bowls",
+    "cuisine": "Mexican-inspired",
+    "category": "Lunch",
+    "minutes": 25,
+    "servings": 2,
+    "description": "Rice bowls with beans, corn and avocado.",
+    "ingredients": [
+      {
+        "name": "rice",
+        "quantity": "3/4 cup dry",
+        "aliases": [
+          "white rice",
+          "basmati rice",
+          "long grain rice",
+          "long grain white rice"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "black beans",
+        "quantity": "1 can (400 g), drained",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "corn",
+        "quantity": "1 cup",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "avocado",
+        "quantity": "1",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "lime",
+        "quantity": "1",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "cumin",
+        "quantity": "1/2 teaspoon",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "salt",
+        "quantity": "1/4 teaspoon",
+        "aliases": [],
+        "pantry": true
+      }
+    ],
+    "steps": [
+      "Cook the rice in water according to the package instructions.",
+      "Rinse the beans, then heat with corn, cumin, salt and 3 tablespoons water in a saucepan until steaming hot throughout.",
+      "Slice the avocado. Divide the rice and bean mixture between two bowls and add avocado and lime juice."
+    ],
+    "course": "Main dish",
+    "dietary": [
+      "vegetarian",
+      "vegan",
+      "dairy-free"
+    ],
+    "allergens": []
+  },
+  {
+    "id": "online-kung-pao",
+    "title": "Kung Pao Chicken",
+    "cuisine": "Chinese",
+    "category": "Dinner",
+    "course": "Main dish",
+    "minutes": 25,
+    "servings": 4,
+    "description": "Chicken with peanuts, chilies and a tangy Sichuan-style sauce.",
+    "ingredients": [
+      {
+        "name": "chicken thigh",
+        "quantity": "500 g",
+        "aliases": [
+          "chicken thighs"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "cornstarch",
+        "quantity": "2 teaspoons",
+        "aliases": [
+          "cornflour"
+        ],
+        "pantry": true
+      },
+      {
+        "name": "light soy sauce",
+        "quantity": "1 tablespoon",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "dark soy sauce",
+        "quantity": "1 1/2 tablespoons",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "chinese black vinegar",
+        "quantity": "2 tablespoons",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "chinese cooking wine",
+        "quantity": "1 tablespoon",
+        "aliases": [
+          "shaoxing wine"
+        ],
+        "pantry": true
+      },
+      {
+        "name": "sugar",
+        "quantity": "3 tablespoons",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "sesame oil",
+        "quantity": "1/2 teaspoon",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "peanut oil",
+        "quantity": "2 tablespoons",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "garlic",
+        "quantity": "2 cloves",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "ginger",
+        "quantity": "1 teaspoon",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "dried chilies",
+        "quantity": "6–10",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "green onion",
+        "quantity": "3",
+        "aliases": [
+          "scallions"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "sichuan pepper",
+        "quantity": "1 1/2 teaspoons ground",
+        "aliases": [
+          "sichuan peppercorns"
+        ],
+        "pantry": true
+      },
+      {
+        "name": "peanut",
+        "quantity": "3/4 cup roasted unsalted",
+        "aliases": [
+          "peanuts"
+        ],
+        "pantry": false
+      }
+    ],
+    "steps": [],
+    "dietary": [
+      "dairy-free"
+    ],
+    "allergens": [
+      "peanut",
+      "soy",
+      "wheat",
+      "sesame",
+      "sulfites"
+    ],
+    "timeNote": "Allow 10–20 minutes to marinate; rice is an optional accompaniment.",
+    "source": {
+      "name": "RecipeTin Eats",
+      "author": "Nagi Maehashi",
+      "url": "https://www.recipetineats.com/kung-pao-chicken/",
+      "rating": 4.9,
+      "ratingCount": 99,
+      "checkedOn": "2026-09-25"
+    }
+  },
+  {
+    "id": "online-chow-mein",
+    "title": "Chicken Chow Mein",
+    "cuisine": "Chinese",
+    "category": "Dinner",
+    "course": "Main dish",
+    "minutes": 15,
+    "servings": 2,
+    "description": "Stir-fried chicken noodles with cabbage, carrots and bean sprouts.",
+    "ingredients": [
+      {
+        "name": "chicken breast",
+        "quantity": "200 g",
+        "aliases": [
+          "chicken thigh",
+          "chicken"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "cabbage",
+        "quantity": "4 cups shredded",
+        "aliases": [
+          "green cabbage"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "peanut oil",
+        "quantity": "1 1/2 tablespoons",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "garlic",
+        "quantity": "2 cloves",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "chow mein noodles",
+        "quantity": "200 g",
+        "aliases": [
+          "egg noodles"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "carrot",
+        "quantity": "1",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "bean sprouts",
+        "quantity": "1 1/2 cups",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "green onion",
+        "quantity": "3",
+        "aliases": [
+          "scallions"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "cornstarch",
+        "quantity": "2 teaspoons",
+        "aliases": [
+          "cornflour"
+        ],
+        "pantry": true
+      },
+      {
+        "name": "soy sauce",
+        "quantity": "1 1/2 tablespoons",
+        "aliases": [
+          "light soy sauce"
+        ],
+        "pantry": true
+      },
+      {
+        "name": "oyster sauce",
+        "quantity": "1 1/2 tablespoons",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "chinese cooking wine",
+        "quantity": "1 1/2 tablespoons",
+        "aliases": [
+          "shaoxing wine",
+          "mirin"
+        ],
+        "pantry": true
+      },
+      {
+        "name": "sugar",
+        "quantity": "2 teaspoons",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "sesame oil",
+        "quantity": "1/2 teaspoon",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "white pepper",
+        "quantity": "to taste",
+        "aliases": [],
+        "pantry": true
+      }
+    ],
+    "steps": [],
+    "dietary": [
+      "dairy-free"
+    ],
+    "allergens": [
+      "peanut",
+      "egg",
+      "wheat",
+      "soy",
+      "shellfish",
+      "fish",
+      "sesame",
+      "sulfites"
+    ],
+    "timeNote": "Serves 2–3; check the source for marinating and noodle preparation.",
+    "source": {
+      "name": "RecipeTin Eats",
+      "author": "Nagi Maehashi",
+      "url": "https://www.recipetineats.com/chicken-chow-mein/",
+      "rating": 4.97,
+      "ratingCount": 358,
+      "checkedOn": "2026-09-25"
+    }
+  },
+  {
+    "id": "online-butter-chicken",
+    "title": "Butter Chicken",
+    "cuisine": "Indian",
+    "category": "Dinner",
+    "course": "Main dish",
+    "minutes": 35,
+    "servings": 4,
+    "description": "Marinated chicken in a creamy tomato curry.",
+    "ingredients": [
+      {
+        "name": "chicken thigh",
+        "quantity": "750 g",
+        "aliases": [
+          "chicken thighs"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "yogurt",
+        "quantity": "1/2 cup",
+        "aliases": [
+          "plain yoghurt",
+          "greek yogurt",
+          "plain yogurt"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "lemon juice",
+        "quantity": "1 tablespoon",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "turmeric",
+        "quantity": "1 teaspoon",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "garam masala",
+        "quantity": "2 teaspoons",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "cayenne pepper",
+        "quantity": "1/2 teaspoon",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "cumin",
+        "quantity": "1 teaspoon ground",
+        "aliases": [
+          "ground cumin"
+        ],
+        "pantry": true
+      },
+      {
+        "name": "ginger",
+        "quantity": "1 tablespoon grated",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "garlic",
+        "quantity": "2 cloves",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "butter",
+        "quantity": "30 g",
+        "aliases": [
+          "ghee"
+        ],
+        "pantry": true
+      },
+      {
+        "name": "tomato passata",
+        "quantity": "1 cup",
+        "aliases": [
+          "tomato puree"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "cream",
+        "quantity": "1 cup",
+        "aliases": [
+          "heavy cream"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "sugar",
+        "quantity": "1 tablespoon",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "salt",
+        "quantity": "1 1/4 teaspoons",
+        "aliases": [],
+        "pantry": true
+      }
+    ],
+    "steps": [],
+    "dietary": [],
+    "allergens": [
+      "milk"
+    ],
+    "timeNote": "Plus at least 3 hours marinating; serves 3–4. Rice and garnishes are optional.",
+    "source": {
+      "name": "RecipeTin Eats",
+      "author": "Nagi Maehashi",
+      "url": "https://www.recipetineats.com/butter-chicken/",
+      "rating": 4.96,
+      "ratingCount": 1106,
+      "checkedOn": "2026-09-25"
+    }
+  },
+  {
+    "id": "online-dal",
+    "title": "Dal (Indian Lentil Curry)",
+    "cuisine": "Indian",
+    "category": "Dinner",
+    "course": "Main dish",
+    "minutes": 105,
+    "servings": 4,
+    "description": "Yellow lentils simmered with aromatics and Indian spices.",
+    "ingredients": [
+      {
+        "name": "ghee",
+        "quantity": "30 g",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "onion",
+        "quantity": "1 medium",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "garlic",
+        "quantity": "6 cloves",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "ginger",
+        "quantity": "1 tablespoon",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "curry leaves",
+        "quantity": "8 fresh or 6 dried",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "tomato",
+        "quantity": "1",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "cumin",
+        "quantity": "1/2 teaspoon ground",
+        "aliases": [
+          "ground cumin"
+        ],
+        "pantry": true
+      },
+      {
+        "name": "chana dal",
+        "quantity": "1 cup dry",
+        "aliases": [
+          "yellow split peas",
+          "yellow lentils"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "turmeric",
+        "quantity": "1/2 teaspoon",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "garam masala",
+        "quantity": "1/8 teaspoon",
+        "aliases": [],
+        "pantry": true
+      },
+      {
+        "name": "salt",
+        "quantity": "3/4 teaspoon",
+        "aliases": [],
+        "pantry": true
+      }
+    ],
+    "steps": [],
+    "dietary": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "milk",
+      "mustard"
+    ],
+    "timeNote": "Plus 1 hour soaking; serves 3–4. See source for optional chili, tadka and rice; mustard is in the optional tadka.",
+    "source": {
+      "name": "RecipeTin Eats",
+      "author": "Nagi Maehashi",
+      "url": "https://www.recipetineats.com/dal-indian-lentil-curry/",
+      "rating": 4.94,
+      "ratingCount": 62,
+      "checkedOn": "2026-09-25"
+    }
+  },
+  {
+    "id": "cheese-pizza",
+    "title": "Cheese Pizza",
+    "category": "Pizza",
+    "cuisine": "Italian-inspired",
+    "course": "Main dish",
+    "minutes": 30,
+    "servings": 2,
+    "description": "A simple cheese pizza with a crisp crust, tomato sauce and melted mozzarella. Uses prepared pizza dough.",
+    "ingredients": [
+      {
+        "name": "pizza dough",
+        "quantity": "250 g, ready to stretch",
+        "aliases": [
+          "prepared pizza dough",
+          "fresh pizza dough"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "pizza sauce",
+        "quantity": "1/3 cup",
+        "aliases": [
+          "tomato pizza sauce",
+          "marinara sauce"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "mozzarella",
+        "quantity": "150 g, shredded",
+        "aliases": [
+          "mozzarella cheese",
+          "shredded mozzarella",
+          "low moisture mozzarella",
+          "mozz chs"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "olive oil",
+        "quantity": "1 teaspoon",
+        "aliases": [
+          "extra virgin olive oil",
+          "evoo"
+        ],
+        "pantry": true
+      }
+    ],
+    "steps": [
+      "Heat the oven to 475°F (245°C), or the temperature specified on your dough package. Lightly oil a baking tray.",
+      "Stretch the prepared dough into a roughly 12-inch circle on the tray. If it springs back, let it rest for 5 minutes before stretching again.",
+      "Spread the pizza sauce over the dough, leaving a small border. Sprinkle the mozzarella evenly over the sauce.",
+      "Bake for 12–15 minutes, or according to the dough package, until the crust is golden, the center is cooked through and the cheese is bubbling.",
+      "Let the pizza rest for 3 minutes, then slice and serve."
+    ],
+    "dietary": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "wheat",
+      "milk"
+    ]
+  },
+  {
+    "id": "roma-tomato-basil-pizza",
+    "title": "Roma Tomato & Basil Cheese Pizza",
+    "category": "Pizza",
+    "cuisine": "Italian-inspired",
+    "course": "Main dish",
+    "minutes": 35,
+    "servings": 2,
+    "description": "Refrigerated pizza dough topped with tomato sauce, mozzarella, Parmesan, garlic, Roma tomatoes and fresh basil.",
+    "ingredients": [
+      {
+        "name": "pizza dough",
+        "quantity": "250 g, refrigerated",
+        "aliases": [
+          "refrigerated pizza dough",
+          "pizza dough refrigerated",
+          "prepared pizza dough",
+          "fresh pizza dough"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "pizza sauce",
+        "quantity": "1/3 cup",
+        "aliases": [
+          "tomato pizza sauce"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "mozzarella",
+        "quantity": "150 g, shredded",
+        "aliases": [
+          "mozzarella cheese",
+          "shredded mozzarella cheese",
+          "mozzarella cheese shredded",
+          "mozz chs"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "parmesan",
+        "quantity": "2 tablespoons, grated",
+        "aliases": [
+          "parmesan cheese",
+          "grated parmesan",
+          "grated parmesan cheese",
+          "parmesan cheese grated",
+          "parm chs"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "olive oil",
+        "quantity": "1 teaspoon",
+        "aliases": [
+          "extra virgin olive oil",
+          "evoo"
+        ],
+        "pantry": true
+      },
+      {
+        "name": "garlic",
+        "quantity": "1 clove, finely minced",
+        "aliases": [],
+        "pantry": false
+      },
+      {
+        "name": "italian seasoning",
+        "quantity": "1/2 teaspoon",
+        "aliases": [
+          "italian herbs",
+          "italian herb seasoning"
+        ],
+        "pantry": true
+      },
+      {
+        "name": "basil",
+        "quantity": "6 fresh leaves",
+        "aliases": [
+          "fresh basil"
+        ],
+        "pantry": false
+      },
+      {
+        "name": "roma tomato",
+        "quantity": "2 small, thinly sliced",
+        "aliases": [
+          "roma tomatoes",
+          "plum tomato",
+          "plum tomatoes"
+        ],
+        "pantry": false
+      }
+    ],
+    "steps": [
+      "Prepare the refrigerated dough according to its package instructions, allowing it to rest if required. Heat the oven to the package temperature; for dough without instructions, use 475°F (245°C).",
+      "Pat the sliced Roma tomatoes dry. Lightly grease a baking tray with half the olive oil and stretch the dough into a roughly 12-inch circle on the tray.",
+      "Mix the pizza sauce with the minced garlic and Italian seasoning. Spread over the dough, leaving a small border.",
+      "Sprinkle on the mozzarella, arrange the tomato slices on top and finish with the grated Parmesan. Brush the exposed crust with the remaining olive oil.",
+      "Bake according to the dough package, or for approximately 12–15 minutes at 475°F (245°C), until the crust is golden, the center is baked through and the cheese is bubbling.",
+      "Tear the fresh basil over the baked pizza. Rest for 3 minutes, then slice and serve."
+    ],
+    "dietary": [
+      "vegetarian"
+    ],
+    "allergens": [
+      "wheat",
+      "milk"
+    ],
+    "timeNote": "Allow extra resting time if required by the dough package. For a vegetarian pizza, choose mozzarella and Parmesan made with vegetarian rennet."
+  }
+]

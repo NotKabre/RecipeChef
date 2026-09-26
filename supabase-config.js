@@ -1,4 +1,4 @@
 // Find these values in Supabase: Project Settings > API.
 // The anon/publishable key is intended to be used in browser code.
-export const SUPABASE_URL = "https://YOUR_PROJECT.supabase.co";
-export const SUPABASE_ANON_KEY = "YOUR_SUPABASE_ANON_KEY";
+export const SUPABASE_URL = "https://beyztutorxvopftaiflk.supabase.co";
+export const SUPABASE_ANON_KEY = "sb_publishable_0WVQA5ohFoG3YguE-bbjTg_FvlIalRQ";

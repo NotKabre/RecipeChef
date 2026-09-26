@@ -1,0 +1,8 @@
+project_id = "recipechef"
+
+[functions.generate-recipes]
+enabled = true
+# The handler authenticates the bearer token with Supabase Auth getUser().
+# Disable only the gateway's legacy JWT check, not application authentication.
+verify_jwt = false
+entrypoint = "./functions/generate-recipes/index.ts"

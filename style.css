@@ -1,0 +1,179 @@
+body {
+    background-color: rgb(29, 1, 81);
+    font-family: Times New Roman
+        ;
+}
+
+h1 {
+    color: rgb(255, 255, 255);
+}
+
+p {
+    color: rgb(255, 255, 255);
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+}
+
+a {
+    color: rgb(255, 255, 255);
+}
+
+
+.card{
+    padding: 15px;
+    border: 2px solid white;
+    margin: 20px;
+    width: 250px;
+    height:auto;
+
+    background-image: url("https://img.magnific.com/free-vector/abstract-paper-cut-shape-wave-background_474888-4650.jpg?semt=ais_hybrid&w=740&q=80");
+    background-size: cover;
+    background-position:center;
+}
+
+
+nav {
+    background-color: #000000;
+    color: rgb(82, 0, 223);
+    padding: 10px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav .nav-links{
+    list-style: none;
+    display: flex;
+   gap: 20px;
+}
+nav a {
+    color: white;
+    text-decoration: none;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #000000;
+    color: #222;
+}
+
+
+/* NAVBAR */
+
+nav {
+    background: #5d00ff;
+    padding: 15px;
+}
+
+nav .nav-links {
+    display:flex;
+    justify-content:center;
+    gap:40px;
+    list-style:none;
+}
+
+nav a {
+    color:rgb(255, 255, 255);
+    text-decoration:none;
+    font-size:18px;
+}
+
+
+/* HERO */
+
+.hero {
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    gap:80px;
+
+    padding:80px;
+
+}
+
+
+.hero-text {
+    width:450px;
+}
+
+
+.hero h1 {
+    font-size:55px;
+    margin-bottom:10px;
+}
+
+
+.hero h2 {
+    color:#9a8e8e;
+}
+
+
+.hero p {
+    font-size:20px;
+    line-height:1.5;
+}
+
+
+button {
+
+    background:#fcfcfc;
+    color:rgb(0, 0, 0);
+
+    border:none;
+    padding:15px 25px;
+
+    border-radius:12px;
+
+    font-size:18px;
+
+}
+
+
+/* IMAGE */
+
+.hero-image img {
+
+    width:250px;
+    height:250px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+
+/* CARDS */
+
+.cards {
+
+    text-align:center;
+    padding:50px;
+
+}
+
+
+.card-container {
+
+    display:flex;
+    justify-content:center;
+    gap:30px;
+
+}
+
+
+.card {
+
+    background:rgb(72, 72, 72);
+
+    width:220px;
+
+    padding:25px;
+
+    border-radius:20px;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.1);
+
+}

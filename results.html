@@ -12,11 +12,14 @@
 
     <title>Your Recipes | Cooklit</title>
 
-    <link rel="stylesheet" href="results.css">
+    <link rel="stylesheet" href="results.css?v=recipe-tools-1">
 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@800;900;1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="garden-pages.css?v=1">
 </head>
 
-<body>
+<body class="gardenPage resultsGarden">
+    <header class="gardenHeader"><a class="gardenLogo" href="cooking.html" aria-label="Cooklit home"><img src="images/chef-hat.svg" alt="">Cooklit<span aria-hidden="true">✦</span></a><a class="homeLink" href="cooking.html">Back to home <span aria-hidden="true">↗</span></a></header>
 
     <main class="resultsContainer">
 
@@ -33,7 +36,7 @@
         </h1>
 
         <p class="subtitle">
-            Cooklit found these ingredients from your receipt.
+            Review your ingredients, find a meal, and save your favorites.
         </p>
 
 
@@ -47,12 +50,15 @@
                 Loading ingredients...
             </p>
 
-            <div
-                class="ingredientList"
-                id="ingredientList"
-            >
-
-            </div>
+            <form id="ingredientForm">
+                <p class="filterHelp">Correct a name, remove an item, or add ingredients you already have.</p>
+                <div class="ingredientList" id="ingredientList"></div>
+                <div class="editorActions">
+                    <button id="addIngredient" type="button">Add ingredient</button>
+                    <button type="submit">Update ingredients</button>
+                </div>
+            </form>
+            <p id="ingredientStatus" role="status" aria-live="polite"></p>
 
         </section>
 
@@ -63,25 +69,58 @@
 
             <h2>Recommended Recipes</h2>
 
-            <article class="recipe">
-
-                <div>
-
-                    <p class="recipeLabel">
-                        Coming Soon
-                    </p>
-
-                    <h3>
-                        AI Recipe Recommendations
-                    </h3>
-
-                    <p>
-                        We're preparing personalized recipes using your scanned ingredients.
-                    </p>
-
-                </div>
-
-            </article>
+            <p id="recipeStatus" role="status" aria-live="polite">Find recipes from our collection using your scanned ingredients.</p>
+            <button id="generateRecipes" type="button" disabled>Find Recipes</button>
+            <a id="recipeSignIn" href="signin.html" hidden>Sign in for AI selection</a>
+            <div id="cuisineFilter" class="cuisineFilter" hidden>
+                <label for="cuisineSelect">Cuisine</label>
+                <select id="cuisineSelect"><option value="all">All cuisines</option></select>
+            </div>
+            <div class="recipeFilters">
+                <label>Show recipes
+                    <select id="collectionSelect">
+                        <option value="matches">Ingredient matches</option>
+                        <option value="favorites">My favorites</option>
+                    </select>
+                </label>
+                <label>Ingredients available
+                    <select id="readinessSelect">
+                        <option value="all">All recipes</option>
+                        <option value="ready">Ready to cook</option>
+                        <option value="missing">Needs groceries</option>
+                    </select>
+                </label>
+                <label>Diet
+                    <select id="dietSelect">
+                        <option value="all">Any diet</option>
+                        <option value="vegetarian">Vegetarian</option>
+                        <option value="vegan">Vegan</option>
+                        <option value="dairy-free">Dairy-free</option>
+                    </select>
+                </label>
+                <label>Exclude ingredients (comma separated)
+                    <input id="excludeIngredients" type="text" maxlength="500" placeholder="e.g. mushroom, garlic">
+                </label>
+            </div>
+            <fieldset id="allergenFilters">
+                <legend>Exclude listed allergens</legend>
+                <label><input type="checkbox" value="milk"> Milk</label>
+                <label><input type="checkbox" value="egg"> Egg</label>
+                <label><input type="checkbox" value="wheat"> Wheat</label>
+                <label><input type="checkbox" value="soy"> Soy</label>
+                <label><input type="checkbox" value="peanut"> Peanuts</label>
+                <label><input type="checkbox" value="tree-nut"> Tree nuts</label>
+                <label><input type="checkbox" value="sesame"> Sesame</label>
+                <label><input type="checkbox" value="fish"> Fish</label>
+                <label><input type="checkbox" value="shellfish"> Shellfish</label>
+                <label><input type="checkbox" value="mustard"> Mustard</label>
+                <label><input type="checkbox" value="sulfites"> Sulfites</label>
+            </fieldset>
+            <p class="filterHelp">Ready to cook checks ingredient names, not quantities. Diet and allergen filters cover the listed ingredients, not cross-contact or every brand. Check product labels, cheese rennet, optional toppings and the original recipe.</p>
+            <p id="favoriteStatus" role="status" aria-live="polite">Sign in to save favorites in this browser.</p>
+            <a href="signin.html">Sign in</a>
+            <p id="filterStatus" role="status" aria-live="polite"></p>
+            <div id="recipeList" aria-busy="false"></div>
 
         </section>
 
@@ -97,7 +136,7 @@
     </main>
 
 
-    <script src="results.js"></script>
+    <script type="module" src="results.js?v=ingredient-fix-2"></script>
 
 </body>
 

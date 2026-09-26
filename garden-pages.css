@@ -1,0 +1,89 @@
+/* Shared landing-page aesthetic, scoped to the scan, results and sign-in pages. */
+.gardenPage {
+    --forest: #163d22;
+    --cream: #fffdf6;
+    --charcoal: #163d22;
+    --muted: #64705f;
+    --surface: #ffffff;
+    --border: #dce4d2;
+    --page-background: #fffdf6;
+    /* Existing page components use these accent tokens. */
+    --red: #163d22;
+    --red-dark: #285b31;
+    --red-light: #eaf1dd;
+    font-family: 'Inter', sans-serif;
+    background: var(--cream);
+    color: var(--forest);
+    isolation: isolate;
+}
+.gardenPage::before, .gardenPage::after {
+    content: '';
+    position: fixed;
+    z-index: -1;
+    pointer-events: none;
+    background: linear-gradient(135deg, #eaf2d2, #cbdca6);
+}
+.gardenPage::before { width: 300px; height: 310px; right: 0; top: 0; border-radius: 0 0 0 95%; }
+.gardenPage::after { width: 230px; height: 350px; left: 0; bottom: 0; border-radius: 0 95% 0 0; opacity: .75; }
+.gardenPage ::selection { background: #d6e7bc; color: var(--forest); }
+.gardenPage a { color: var(--forest); }
+.gardenPage :where(button, a, summary, input, select):focus-visible { outline: 3px solid #517b38; outline-offset: 4px; }
+.gardenPage input { accent-color: var(--forest); }
+.gardenPage button { font-family: inherit; }
+.gardenPage h1, .gardenPage h2, .gardenPage h3 { color: var(--forest); }
+.gardenHeader { width: 100%; display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 26px 5%; }
+.gardenLogo { display: inline-flex; align-items: center; gap: 6px; font-family: 'Nunito', sans-serif; font-size: 30px; font-weight: 1000; letter-spacing: -1.5px; text-decoration: none; flex-shrink: 0; }
+.gardenLogo img { width: 34px; height: 34px; }
+.gardenLogo span { color: #91b66a; font-size: 24px; align-self: flex-start; }
+.homeLink { font-size: 14px; text-decoration: none; }
+.homeLink:hover { text-decoration: underline; text-underline-offset: 5px; }
+.cameraGarden { display: block; }
+.cameraGarden .cameraContainer { max-width: 1000px; margin: auto; padding: 26px 24px 60px; gap: 28px; }
+.cameraGarden h1 { font-size: clamp(32px, 5vw, 48px); letter-spacing: -1.5px; }
+.cameraGarden .cameraInstructions { margin-top: -10px; }
+.cameraGarden .cameraBox { width: 100%; max-width: 760px; border: 3px solid #aace83; background: #14251a; box-shadow: 0 18px 48px #163d2215; }
+.cameraGarden .buttonRow { flex-wrap: wrap; gap: 12px; }
+.cameraGarden #retakeBtn { background: #426a36; color: white; }
+.cameraGarden #retakeBtn:hover { background: var(--forest); }
+.cameraGarden #scanningScreen { background: rgba(255,253,246,.97); padding: 24px; text-align: center; overflow-y: auto; }
+.cameraGarden .scanLine { box-shadow: 0 0 12px #aace83b3, 0 0 25px #aace8366; }
+.resultsGarden .resultsContainer { width: min(1000px, 90%); padding: 30px 0 64px; }
+.resultsGarden h1 { font-size: clamp(34px, 5vw, 54px); line-height: 1.13; padding-bottom: .1em; }
+.resultsGarden .subtitle { font-size: 18px; line-height: 1.6; }
+.resultsGarden .successIcon { background: #dceac4; color: var(--forest); }
+.resultsGarden .ingredientsSection, .resultsGarden .recipesSection { margin-top: 32px; padding: 28px; border: 1px solid var(--border); border-radius: 28px; background: #ffffffed; box-shadow: 0 10px 35px #163d2206; }
+.resultsGarden .recipe { background: #fffdf6; box-shadow: none; gap: 20px; }
+.resultsGarden .recipe:hover { box-shadow: 0 8px 24px #163d220a; transform: translateY(-2px); }
+.resultsGarden .cuisineHeading { border-color: #aace83; }
+.resultsGarden .recipeCourse { border-radius: 999px; border: 1px solid #cbdca6; }
+.resultsGarden #recipeStatus, .resultsGarden #emptyMessage { line-height: 1.6; color: var(--muted); }
+.resultsGarden #allergenFilters { background: #f8faF3; }
+.resultsGarden #allergenFilters legend { padding: 0 8px; font-size: 14px; font-weight: 600; }
+.signinGarden .signinPage { padding: 26px 5% 60px; }
+.signinGarden .gardenLogo { align-self: flex-start; }
+.signinGarden .signinCard { margin-top: 36px; max-width: 480px; padding: 36px 40px; background: #ffffffed; box-shadow: 0 18px 55px #163d220a; }
+.signinGarden .eyebrow { display: inline-block; background: #dceac4; border-radius: 999px; padding: 6px 14px; color: var(--forest); }
+.signinGarden .signinCard h1 { margin-top: 18px; line-height: 1.15; }
+.signinGarden form { margin-top: 26px; }
+.signinGarden .inputGroup input { background: #fffdf9; }
+.signinGarden .googleButton { background: white; color: black; }
+.signinGarden .googleButton:hover { background: #f5f5f5; }
+@media (max-width: 600px) {
+    .gardenHeader { padding: 20px; gap: 12px; }
+    .gardenLogo { font-size: 26px; }
+    .gardenLogo img { width: 29px; }
+    .homeLink { font-size: 12px; }
+    .gardenPage::before { width: 160px; height: 230px; opacity: .6; }
+    .gardenPage::after { width: 100px; height: 240px; }
+    .resultsGarden .ingredientsSection, .resultsGarden .recipesSection { padding: 20px 16px; border-radius: 22px; }
+    .resultsGarden .recipe { padding: 20px 16px; flex-direction: column; gap: 14px; }
+    .resultsGarden .ingredientRow button { padding: 10px 12px; }
+    .resultsGarden .recipeFilters select, .resultsGarden .recipeFilters input, .resultsGarden .ingredientRow input { font-size: 16px; }
+    .signinGarden .signinPage { padding: 20px 20px 44px; }
+    .signinGarden .signinCard { margin-top: 30px; padding: 28px 24px; }
+    .cameraGarden .cameraContainer { padding: 24px 20px 44px; }
+}
+@media (prefers-reduced-motion: reduce) {
+    .gardenPage *, .gardenPage *::before, .gardenPage *::after { animation: none !important; transition: none !important; }
+    .gardenPage button:hover, .gardenPage .recipe:hover { transform: none; }
+}

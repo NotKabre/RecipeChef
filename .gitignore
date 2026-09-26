@@ -1,0 +1,10 @@
+# Server secrets: never commit actual credentials.
+.env
+.env.*
+**/.env
+**/.env.*
+!.env.example
+!**/.env.example
+supabase/.temp/
+supabase/.branches/
+.DS_Store

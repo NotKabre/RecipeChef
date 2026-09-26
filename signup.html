@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create Account | Cooklit</title>
+    <link rel="stylesheet" href="signin.css?v=red-black-1">
+</head>
+<body>
+    <main class="signinPage">
+        <a class="logo" href="cooking.html">Cooklit</a>
+        <section class="signinCard">
+            <p class="eyebrow">Cooklit</p>
+            <h1>Create your account.</h1>
+            <p class="subtitle">Choose a username we can call you. Use your email and password to sign in.</p>
+            <p id="statusMessage" class="statusMessage" role="status" hidden></p>
+
+            <form id="signupForm">
+                <div class="inputGroup">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" name="username" autocomplete="nickname"
+                        placeholder="Choose your username" maxlength="80" required>
+                </div>
+                <div class="inputGroup">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" autocomplete="email"
+                        placeholder="you@example.com" required>
+                </div>
+                <div class="inputGroup">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password" autocomplete="new-password"
+                        placeholder="Create your password" minlength="6" required>
+                </div>
+                <button class="signinButton" type="submit">Create Account</button>
+            </form>
+
+            <p class="signupText">Already have an account? <a href="signin.html">Sign in</a></p>
+        </section>
+    </main>
+    <script type="module" src="signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+/* Shared Cooklit palette: red, white, and black. */
+:root {
+    --warm-white: #ffffff;
+    --surface: #ffffff;
+    --charcoal: #171717;
+    --muted: #606060;
+    --red: #c62828;
+    --red-light: #fceaea;
+    --red-dark: #a51f1f;
+    --border: #ded6d6;
+    --page-background: #ffffff;
+}
+
+body {
+    color: var(--charcoal);
+}
+
+::selection {
+    background: var(--red);
+    color: #ffffff;
+}
+
+a { color: var(--red-dark); }
+
+:where(button, a, summary, input):focus-visible {
+    outline: 3px solid var(--red-dark);
+    outline-offset: 4px;
+}

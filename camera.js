@@ -1,3 +1,5 @@
+import { extractReceiptIngredients, expandIngredientAbbreviations } from "./supabase/functions/_shared/receipt-ingredients.js";
+
 const camera = document.getElementById("camera");
 const captureBtn = document.getElementById("captureBtn");
 const retakeBtn = document.getElementById("retakeBtn");
@@ -69,8 +71,31 @@ captureBtn.addEventListener("click", () => {
 
     const context = canvas.getContext("2d");
 
+    const videoRatio = camera.videoWidth / camera.videoHeight;
+    const previewRatio = camera.clientWidth / camera.clientHeight;
+    let sourceX = 0;
+    let sourceY = 0;
+    let sourceWidth = camera.videoWidth;
+    let sourceHeight = camera.videoHeight;
+
+    // Match the crop produced by object-fit: cover in the camera preview.
+    if (videoRatio > previewRatio) {
+        sourceWidth = camera.videoHeight * previewRatio;
+        sourceX = (camera.videoWidth - sourceWidth) / 2;
+    } else if (videoRatio < previewRatio) {
+        sourceHeight = camera.videoWidth / previewRatio;
+        sourceY = (camera.videoHeight - sourceHeight) / 2;
+    }
+
+    canvas.width = Math.round(sourceWidth);
+    canvas.height = Math.round(sourceHeight);
+
     context.drawImage(
         camera,
+        sourceX,
+        sourceY,
+        sourceWidth,
+        sourceHeight,
         0,
         0,
         canvas.width,
@@ -115,6 +140,12 @@ useBtn.addEventListener("click", async () => {
 
     try {
 
+        if (!window.Tesseract?.recognize) {
+            throw new Error(
+                "The receipt reader did not load. Check your internet connection and try again."
+            );
+        }
+
         const result = await Tesseract.recognize(
             image,
             "eng",
@@ -146,7 +177,10 @@ useBtn.addEventListener("click", async () => {
         console.log("Full OCR text:");
         console.log(receiptText);
 
-        const ingredients = cleanReceiptText(receiptText);
+        const catalogResponse = await fetch("./recipe.json");
+        if (!catalogResponse.ok) throw new Error("Could not load recipe ingredients. Please try again.");
+        const catalog = await catalogResponse.json();
+        const ingredients = cleanReceiptText(receiptText, catalog);
 
         console.log("Filtered ingredients:");
         console.log(ingredients);
@@ -193,7 +227,11 @@ useBtn.addEventListener("click", async () => {
 
 
 // CLEAN OCR TEXT
-function cleanReceiptText(text) {
+// Receipt abbreviations expand before food detection so shortened items are kept.
+// Avoid ambiguous codes such as ORG (organic/orange) and receipt units like OZ.
+
+
+function cleanReceiptText(text, catalog = []) {
 
     const ignoreWords = [
         "TOTAL",
@@ -363,6 +401,14 @@ function cleanReceiptText(text) {
         "FLOUR",
         "BAGEL",
         "BAGELS",
+        "BUN",
+        "BUNS",
+        "CROISSANT",
+        "CROISSANTS",
+        "WRAP",
+        "WRAPS",
+        "PITA",
+        "PITAS",
 
         // Pantry
         "OIL",
@@ -386,7 +432,7 @@ function cleanReceiptText(text) {
         .split("\n")
 
         .map(line =>
-            line.trim().toUpperCase()
+            expandIngredientAbbreviations(line.trim().toUpperCase())
         )
 
         .filter(line =>
@@ -394,15 +440,14 @@ function cleanReceiptText(text) {
         )
 
         .filter(line => {
-            return !ignoreWords.some(word =>
-                line.includes(word)
+            const containsFood = foodWords.some(food =>
+                containsWholeTerm(line, food)
             );
-        })
+            const containsReceiptLabel = ignoreWords.some(word =>
+                containsWholeTerm(line, word)
+            );
 
-        .filter(line => {
-            return foodWords.some(food =>
-                line.includes(food)
-            );
+            return containsFood && !containsReceiptLabel;
         })
 
         .map(line => {
@@ -426,7 +471,15 @@ function cleanReceiptText(text) {
             line.length > 0
         );
 
-    return [...new Set(cleanedLines)];
+    const catalogIngredients = extractReceiptIngredients(text, catalog);
+    const otherFoods = cleanedLines.filter(line => !extractReceiptIngredients(line, catalog).length);
+    return [...new Set([...catalogIngredients, ...otherFoods])];
+}
+
+
+function containsWholeTerm(line, term) {
+    const escapedTerm = term.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    return new RegExp(`(^|[^A-Z])${escapedTerm}([^A-Z]|$)`).test(line);
 }
 
 

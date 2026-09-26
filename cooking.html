@@ -5,31 +5,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cooklit</title>
 
-    <link rel="stylesheet" href="cooking.css">
+    <link rel="stylesheet" href="cooking.css?v=garden-3">
 
-    <!-- Apple-like font -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@800;900;1000&display=swap" rel="stylesheet">
 </head>
 <body>
+    <div class="garden" aria-hidden="true">
+        <div class="gardenShape gardenShapeTop"></div>
+        <div class="gardenShape gardenShapeBottom"></div>
+        <span class="basil basilOne"></span>
+        <span class="basil basilTwo"></span>
+        <span class="basil basilThree"></span>
+        <span class="tomato"><span>✦</span></span>
+        <div class="receipt"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></div>
+    </div>
 
-    <nav>
-    <div class="logo">Cooklit</div>
+    <nav aria-label="Main navigation">
+    <a class="logo" href="cooking.html" aria-label="Cooklit home"><img src="images/chef-hat.svg" alt="">Cooklit<span class="logoStar" aria-hidden="true">✦</span></a>
 
     <div class="navButtons">
-        <button class="aboutButton" onclick="window.location.href='index.html'">
+        <button class="favoritesLink" type="button" disabled title="My favorites is temporarily paused">My favorites <span>(paused)</span></button>
+         <span id="userGreeting" hidden></span>
+
+       <button class="aboutButton" onclick="window.location.href='index.html'">
             About Me
         </button>
 
        <button
          class="navButton"
-            onclick="window.location.href='signin.html'"
+            id="authButton"
+            type="button"
         >
             Sign In
+        </button>
+
+        <button
+            class="navButton"
+            id="signOutButton"
+            type="button"
+            hidden
+        >
+            Sign Out
         </button>
     </div>
     </nav>
 
     <main class="hero">
+        <div class="brand" aria-label="Cooklit by Kabir Jadhwani">
+            <div class="wordmark" aria-hidden="true">
+                <img class="chefHat" src="images/chef-hat.svg" alt="">
+                Cooklit
+                <span class="sparkle sparkleOne">✦</span>
+                <span class="sparkle sparkleTwo">✦</span>
+            </div>
+            <div class="creator" aria-hidden="true">by Kabir Jadhwani</div>
+        </div>
+        <div class="leafDivider" aria-hidden="true"><span></span><svg viewBox="0 0 40 40"><path d="M7 32C0 12 18 5 35 4c-1 18-10 33-26 27" fill="currentColor"/><path d="M7 36 28 12" stroke="#fffdf6" stroke-width="2.5" stroke-linecap="round"/></svg><span></span></div>
 
         <h1>
             Cook with what<br>
@@ -46,6 +77,6 @@
         </button>
 
     </main>
-<script src="cooking.js"></script>
+<script type="module" src="cooking.js"></script>
 </body>
 </html>
