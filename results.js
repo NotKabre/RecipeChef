@@ -180,12 +180,15 @@ function renderCuisineGroups() {
     };
     const recipes = collectionRecipes().filter(recipe => passesRecipeFilters(recipe, filters));
     const groups = new Map();
-    for (const recipe of recipes) {
+    const aiPicks = recipes.filter(recipe => recipe.aiRecommended);
+    for (const recipe of recipes.filter(recipe => !recipe.aiRecommended)) {
         const cuisine = recipe.cuisine || "Everyday";
         if (!groups.has(cuisine)) groups.set(cuisine, []);
         groups.get(cuisine).push(recipe);
     }
-    recipeList.replaceChildren(...[...groups].sort(([a], [b]) => a.localeCompare(b)).map(([cuisine, items]) => {
+    const sections = [...groups].sort(([a], [b]) => a.localeCompare(b));
+    if (aiPicks.length) sections.unshift(["AI recommendations", aiPicks]);
+    recipeList.replaceChildren(...sections.map(([cuisine, items]) => {
         const section = document.createElement("section");
         section.className = "cuisineGroup";
         section.setAttribute("aria-label", `${cuisine} recipes`);
@@ -198,7 +201,12 @@ function renderCuisineGroups() {
             ? "Sign in to view your favorites."
             : collectionSelect.value === "favorites" && !favoriteIds.size
                 ? "No favorites yet. Save a recipe from Ingredient matches."
-                : "No recipes fit this selection. Adjust the filters or your ingredients.";
+                : visibleRecipes.length
+                    ? `${visibleRecipes.length} recipes matched your ingredients, but none fit the current filters. Open the filters above to adjust your selection.`
+                    : "No recipes fit this selection. Adjust the filters or your ingredients.";
+    if (!recipes.length) {
+        recipeList.append(element("p", document.getElementById("filterStatus").textContent, "recipeEmptyState"));
+    }
 }
 
 function toggleFavorite(id) {

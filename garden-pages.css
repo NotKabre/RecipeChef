@@ -87,3 +87,13 @@
     .gardenPage *, .gardenPage *::before, .gardenPage *::after { animation: none !important; transition: none !important; }
     .gardenPage button:hover, .gardenPage .recipe:hover { transform: none; }
 }
+
+/* Keep the recipe cards visible without scrolling through every editing control. */
+.resultsGarden .ingredientsSection > summary,
+.resultsGarden .filterPanel > summary { cursor: pointer; font-weight: 600; line-height: 1.5; }
+.resultsGarden .ingredientsSection[open] > summary { margin-bottom: 24px; }
+.resultsGarden .filterPanel { margin: 20px 0; padding: 16px; background: #f8faf3; border: 1px solid var(--border); border-radius: 16px; }
+.resultsGarden .filterPanel[open] > summary { margin-bottom: 20px; }
+.resultsGarden .viewRecipesLink { display: inline-block; margin: 12px 16px; font-weight: 600; text-underline-offset: 4px; }
+.resultsGarden #recipeList { scroll-margin-top: 24px; }
+.resultsGarden .recipeEmptyState { padding: 24px; border: 1px dashed var(--border); border-radius: 16px; line-height: 1.6; color: var(--muted); }

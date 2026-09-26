@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="results.css?v=recipe-tools-1">
 
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Nunito:wght@800;900;1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="garden-pages.css?v=1">
+    <link rel="stylesheet" href="garden-pages.css?v=2">
 </head>
 
 <body class="gardenPage resultsGarden">
@@ -42,7 +42,8 @@
 
         <!-- INGREDIENTS -->
 
-        <section class="ingredientsSection">
+        <details class="ingredientsSection">
+            <summary>Review or edit scanned ingredients</summary>
 
             <h2>Ingredients Detected</h2>
 
@@ -60,7 +61,7 @@
             </form>
             <p id="ingredientStatus" role="status" aria-live="polite"></p>
 
-        </section>
+        </details>
 
 
         <!-- RECIPES -->
@@ -72,6 +73,9 @@
             <p id="recipeStatus" role="status" aria-live="polite">Find recipes from our collection using your scanned ingredients.</p>
             <button id="generateRecipes" type="button" disabled>Find Recipes</button>
             <a id="recipeSignIn" href="signin.html" hidden>Sign in for AI selection</a>
+            <a class="viewRecipesLink" href="#recipeList">View recipes ↓</a>
+            <details class="filterPanel">
+                <summary>Filter recipes by cuisine, diet or ingredients</summary>
             <div id="cuisineFilter" class="cuisineFilter" hidden>
                 <label for="cuisineSelect">Cuisine</label>
                 <select id="cuisineSelect"><option value="all">All cuisines</option></select>
@@ -119,6 +123,7 @@
             <p class="filterHelp">Ready to cook checks ingredient names, not quantities. Diet and allergen filters cover the listed ingredients, not cross-contact or every brand. Check product labels, cheese rennet, optional toppings and the original recipe.</p>
             <p id="favoriteStatus" role="status" aria-live="polite">Sign in to save favorites in this browser.</p>
             <a href="signin.html">Sign in</a>
+            </details>
             <p id="filterStatus" role="status" aria-live="polite"></p>
             <div id="recipeList" aria-busy="false"></div>
 
@@ -136,7 +141,7 @@
     </main>
 
 
-    <script type="module" src="results.js?v=ingredient-fix-2"></script>
+    <script type="module" src="results.js?v=visible-recipes-1"></script>
 
 </body>
 
